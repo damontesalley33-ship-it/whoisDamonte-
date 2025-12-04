@@ -1,0 +1,159 @@
+<link rel="stylesheet" href="style.css">
+/* ---------- BODY ---------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #000000, #111111, #000000);
+    color: white;
+    animation: gradientBG 15s ease infinite;
+    transition: background 0.5s;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+    background: #00ff00;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0,255,0,0.5);
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px 2px #000;
+}
+
+nav .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #00aa00;
+}
+
+/* ---------- HEADER ---------- */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    text-shadow: 0 0 8px #00ff00;
+}
+
+/* ---------- IMAGE WITH CAPTION ---------- */
+.image-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image-container img {
+    max-width: 400px;
+    border: 2px solid #0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #00ff00;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ff00;
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #0f0;
+    font-size: 18px;
+}
+
+/* ---------- MUSIC DROPDOWN ---------- */
+#musicSelect {
+    padding: 10px;
+    background: #0f0;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#musicSelect:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- PROJECT CARD ---------- */
+.project {
+    border: 2px solid #0f0;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #00ff00;
+}
+
+a {
+    color: #0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00aa00;
+}
+
+/* ---------- SECTION HEADINGS ---------- */
+h2 {
+    text-shadow: 0 0 8px #00ff00;
+    margin-top: 50px;
+}
+
+h3 {
+    text-shadow: 0 0 5px #0f0;
+}
+
+/* ---------- AJAX JOKE SECTION ---------- */
+.ajax-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.ajax-section p {
+    font-size: 18px;
+    color: #0f0;
+    margin-top: 10px;
+}
+
+.ajax-button {
+    padding: 12px 20px;
+    background: #0f0;
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0f0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ajax-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ff00;
+}
