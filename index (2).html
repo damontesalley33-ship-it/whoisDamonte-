@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Salley Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #000000, #111111, #000000);
+            color: white;
+            animation: gradientBG 15s ease infinite;
+            transition: background 0.5s;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        nav {
+            background: #00ff00;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0,255,0,0.5);
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        nav .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav .nav-links a:hover {
+            color: #00aa00;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            text-shadow: 0 0 8px #00ff00;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .image-container img {
+            max-width: 400px;
+            border: 2px solid #0f0;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #00ff00;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00ff00;
+        }
+
+        .image-container p {
+            margin-top: 10px;
+            font-style: italic;
+            color: #0f0;
+            font-size: 18px;
+        }
+
+        #musicSelect {
+            padding: 10px;
+            background: #0f0;
+            border: none;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        #musicSelect:hover {
+            transform: scale(1.05);
+        }
+
+        .project {
+            border: 2px solid #0f0;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px #00ff00;
+        }
+
+        a {
+            color: #0f0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #00aa00;
+        }
+
+        h2 {
+            text-shadow: 0 0 8px #00ff00;
+            margin-top: 50px;
+        }
+
+        h3 {
+            text-shadow: 0 0 5px #0f0;
+        }
+
+        /* AJAX Joke Section */
+        .ajax-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .ajax-section p {
+            font-size: 18px;
+            color: #0f0;
+            margin-top: 10px;
+        }
+
+        .ajax-button {
+            padding: 12px 20px;
+            background: #0f0;
+            color: black;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px #0f0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .ajax-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Monte Salley</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>Hello, I'm Damonte' Salley</h1>
+    <p>Computer Science Major from Maryland</p>
+    <p>I enjoy football, music, and spending time with loyal friends.</p>
+    <p>Favorite artist: <strong>NBA Youngboy</strong> | Favorite team: <strong>Commanders</strong></p>
+</header>
+
+<div class="image-container">
+    <img src="C:\Users\fresh\OneDrive\Pictures\DSC_0525 (1).JPG" alt="Monte Salley Picture">
+    <p>Do you really know who I am ?</p>
+</div>
+
+<section class="music-section" style="text-align:center;">
+    <h2>Get to Know Me a Little More</h2>
+    <p>Select a song below!</p>
+
+    <select id="musicSelect">
+        <option value="">-- Select a Song --</option>
+        <option value="yb">NBA Youngboy – The Last Slimeto</option>
+        <option value="hunxho">Hunxho – 22</option>
+    </select>
+
+    <div id="albumDisplay"></div>
+</section>
+
+<section class="api-section" style="text-align:center;">
+    <h2>My Projects</h2>
+
+    <div class="project">
+        <h3>Drag Artist Project</h3>
+        <p>A web project published using GitHub Pages.</p>
+        <a href="https://damontesalley33-ship-it.github.io/drag-artist/" target="_blank">View Drag Artist Project</a>
+    </div>
+
+    <div class="project">
+        <h3>Intro Page</h3>
+        <p>My introductory HTML page.</p>
+        <a href="C:\Users\fresh\Downloads\Scratch paper\lab1\intro page code.html" target="_blank">View Intro Page</a>
+    </div>
+
+    <div class="project">
+        <h3>Jokes</h3>
+        <p>A fun HTML page with jokes.</p>
+        <a href="C:\Users\fresh\Downloads\Scratch paper\lab1\11.5.html" target="_blank">View Jokes Page</a>
+    </div>
+</section>
+
+<!-- AJAX Feature Section -->
+<section class="ajax-section">
+    <h2>Random Joke Loader</h2>
+    <button class="ajax-button" id="loadJokeBtn">Load a Random Joke</button>
+    <p id="jokeDisplay">Click the button to see a joke!</p>
+</section>
+
+<script>
+/* ---------- MUSIC DROPDOWN ---------- */
+const albumDisplay = document.getElementById("albumDisplay");
+document.getElementById("musicSelect").addEventListener("change", function () {
+    if (this.value === "yb") {
+        albumDisplay.innerHTML = `<h3>NBA Youngboy – The Last Slimeto</h3>`;
+    } else if (this.value === "hunxho") {
+        albumDisplay.innerHTML = `<h3>Hunxho – 22</h3>`;
+    } else {
+        albumDisplay.innerHTML = "";
+    }
+});
+
+/* ---------- AJAX FEATURE: Random Joke ---------- */
+const jokeBtn = document.getElementById("loadJokeBtn");
+const jokeDisplay = document.getElementById("jokeDisplay");
+
+jokeBtn.addEventListener("click", () => {
+    // Using a public joke API
+    fetch("https://v2.jokeapi.dev/joke/Any?type=single")
+        .then(response => response.json())
+        .then(data => {
+            jokeDisplay.textContent = data.joke;
+        })
+        .catch(err => {
+            console.error(err);
+            jokeDisplay.textContent = "Failed to load a joke. Try again!";
+        });
+});
+</script>
+
+</body>
+</html>
+
+
