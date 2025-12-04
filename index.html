@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Salley Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Monte Salley</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>Hello, I'm Damonte' Salley</h1>
+    <p>Computer Science Major from Maryland</p>
+    <p>I enjoy football, music, and spending time with loyal friends.</p>
+    <p>Favorite artist: <strong>NBA Youngboy</strong> | Favorite team: <strong>Commanders</strong></p>
+</header>
+
+<div class="image-container">
+    <img src="images/DSC_0525.jpg" alt="Monte Salley Picture">
+    <p>Do you really know who I am ?</p>
+</div>
+
+<section class="music-section" style="text-align:center;">
+    <h2>Get to Know Me a Little More</h2>
+    <p>Select a song below!</p>
+    <select id="musicSelect">
+        <option value="">-- Select a Song --</option>
+        <option value="yb">NBA Youngboy – The Last Slimeto</option>
+        <option value="hunxho">Hunxho – 22</option>
+    </select>
+    <div id="albumDisplay"></div>
+</section>
+
+<section class="api-section" style="text-align:center;">
+    <h2>My Projects</h2>
+    <div class="project">
+        <h3>Drag Artist Project</h3>
+        <p>A web project published using GitHub Pages.</p>
+        <a href="https://damontesalley33-ship-it.github.io/drag-artist/" target="_blank">View Drag Artist Project</a>
+    </div>
+
+    <div class="project">
+        <h3>Intro Page</h3>
+        <p>My introductory HTML page.</p>
+        <a href="intro page code.html" target="_blank">View Intro Page</a>
+    </div>
+
+    <div class="project">
+        <h3>Jokes</h3>
+        <p>A fun HTML page with jokes.</p>
+        <a href="11.5.html" target="_blank">View Jokes Page</a>
+    </div>
+</section>
+
+<section class="ajax-section">
+    <h2>Random Joke Loader</h2>
+    <button class="ajax-button" id="loadJokeBtn">Load a Random Joke</button>
+    <p id="jokeDisplay">Click the button to see a joke!</p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
